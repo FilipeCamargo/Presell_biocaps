@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Caps Fusion - Bem-estar e Equilíbrio</title>
+    <style>
+        /* Reset básico */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        :root {
+            --primary-purple: #6a0dad;
+            --dark-purple: #4b0082;
+            --accent-green: #25d366;
+            --text-dark: #333;
+            --light-gray: #f4f4f4;
+        }
+
+        body { line-height: 1.6; color: var(--text-dark); }
+
+        /* Botões */
+        .btn-cta {
+            background-color: var(--accent-green);
+            color: white;
+            padding: 18px 40px; /* Aumentei um pouco para dar destaque sem imagens */
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn-cta:hover { transform: scale(1.05); background-color: #128c7e; }
+
+        /* Header */
+        header {
+            background-color: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { font-size: 1.4rem; font-weight: bold; color: var(--primary-purple); }
+
+        /* Hero Section - Agora Centralizada e focada no Texto */
+        .hero {
+            padding: 80px 5%;
+            background: linear-gradient(135deg, var(--light-gray) 0%, #fff 100%);
+            text-align: center; /* Centraliza tudo */
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-text { 
+            max-width: 800px; /* Limita a largura para leitura confortável */
+            margin: 0 auto;
+        }
+        .hero-text h1 { 
+            font-size: 3rem; 
+            line-height: 1.2;
+            color: var(--primary-purple); 
+            margin-bottom: 25px; 
+        }
+        .hero-text p { 
+            font-size: 1.3rem; 
+            margin-bottom: 30px; 
+            color: #555;
+        }
+        
+        /* Benefícios */
+        .benefits { padding: 60px 5%; text-align: center; background-color: white; }
+        .benefits h2 { margin-bottom: 40px; color: var(--dark-purple); font-size: 2rem; }
+        .cards-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        .card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 15px;
+            width: 320px;
+            border-top: 6px solid var(--primary-purple);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-bottom: 15px; font-size: 1.4rem; color: var(--primary-purple); }
+
+        /* Ingredientes */
+        .ingredients { padding: 60px 5%; background-color: var(--primary-purple); color: white; text-align: center; }
+        .ingredients h2 { margin-bottom: 10px; font-size: 2rem; }
+        .ing-list { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 35px; }
+        .ing-item { 
+            font-size: 1.3rem; 
+            font-weight: bold; 
+            background: rgba(255,255,255,0.1);
+            border: 2px solid white; 
+            padding: 12px 30px; 
+            border-radius: 50px; 
+        }
+
+        /* Modo de Uso */
+        .usage { padding: 60px 5%; background-color: white; }
+        .usage h2 { text-align: center; color: var(--dark-purple); margin-bottom: 40px; font-size: 2rem; }
+        .usage-container { display: flex; justify-content: center; }
+        .usage-box { 
+            padding: 40px; 
+            border: 2px solid #f0f0f0; 
+            border-radius: 20px; 
+            max-width: 600px; 
+            text-align: center;
+            background-color: #fafafa;
+        }
+        .usage-box h3 { color: var(--primary-purple); margin-bottom: 15px; font-size: 1.6rem;}
+        .usage-box p { font-size: 1.1rem; }
+
+        /* Disclaimer & Footer */
+        .disclaimer { padding: 40px 5%; background-color: #f9f9f9; font-size: 0.9rem; color: #666; text-align: center; border-top: 1px solid #eee; }
+        .final-cta { padding: 80px 5%; text-align: center; background-color: white; }
+        .final-cta h2 { margin-bottom: 20px; color: var(--primary-purple); font-size: 2.2rem; }
+        .final-cta p { font-size: 1.2rem; margin-bottom: 30px; }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; text-align: center; }
+            .hero-text h1 { font-size: 2.2rem; }
+            .hero-text p { font-size: 1.1rem; }
+            .btn-cta { width: 100%; display: block; text-align: center; padding: 15px; }
+            .card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">BIO CAPS FUSION</div>
+        <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+o+Bio+Caps+Fusion" class="btn-cta">Falar com Vendedor</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Descubra o Equilíbrio e Bem-Estar que o Seu Corpo Precisa</h1>
+            <p>Bio Caps Fusion é a combinação inteligente de <strong>Psyllium, Espirulina e Quitosana</strong>. Uma fórmula natural desenvolvida para quem busca leveza e resultados reais na rotina diária.</p>
+            <p><strong>Exclusivo em cápsulas de alta absorção.</strong></p>
+            <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+quero+garantir+meu+Bio+Caps+Fusion" class="btn-cta">Quero Garantir o Meu</a>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>Por que Bio Caps Fusion funciona?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>100% Fórmula Natural</h3>
+                <p>Ingredientes selecionados para entregar eficiência máxima sem agredir o seu organismo. Segurança total para o seu dia a dia.</p>
+            </div>
+            <div class="card">
+                <h3>Praticidade Total</h3>
+                <p>Esqueça preparos complicados. Com cápsulas fáceis de ingerir, você mantém sua rotina saudável em qualquer lugar.</p>
+            </div>
+            <div class="card">
+                <h3>Equilíbrio Real</h3>
+                <p>Desenvolvido para ser o suporte ideal na manutenção do bem-estar, ajudando você a alcançar suas metas pessoais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ingredients">
+        <h2>O Poder da Tripla Fusão</h2>
+        <p style="color: #eee; font-size: 1.1rem;">Não é mágica, é ciência nutricional. Conheça os pilares da nossa fórmula:</p>
+        <div class="ing-list">
+            <div class="ing-item">Psyllium</div>
+            <div class="ing-item">Espirulina</div>
+            <div class="ing-item">Quitosana</div>
+        </div>
+    </section>
+
+    <section class="usage">
+        <h2>Simples de usar, fácil de amar</h2>
+        <div class="usage-container">
+            <div class="usage-box">
+                <h3>💊 Apenas 2 Cápsulas ao Dia</h3>
+                <p>Para obter os melhores resultados, consuma preferencialmente antes das principais refeições com um copo de água, ou siga a orientação do seu profissional de saúde.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer">
+        <h3>Transparência e Segurança</h3>
+        <p>Este produto é um suplemento alimentar e deve ser utilizado como aliado de uma alimentação equilibrada e hábitos saudáveis. <strong>Não é um medicamento.</strong> Consulte um profissional de saúde antes de iniciar o uso, especialmente em casos de condições pré-existentes, gravidez ou amamentação.</p>
+    </section>
+
+    <section class="final-cta">
+        <h2>Pronto para transformar sua rotina?</h2>
+        <p>Você está a um clique de começar uma nova fase. Fale agora com um de nossos consultores.</p>
+        <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+tenho+interesse+no+Bio+Caps+e+gostaria+de+falar+com+vendedor" class="btn-cta">Falar com Vendedor no WhatsApp</a>
+    </section>
+
+</body>
+</html>
