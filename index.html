@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Caps Fusion - Bem-estar e Equilíbrio</title>
+    
+    <title>Bio Caps Fusion - Suplemento Natural com Psyllium, Espirulina e Quitosana</title>
+    <meta name="description" content="Bio Caps Fusion: O suplemento 100% natural para emagrecimento saudável e bem-estar. Fórmula potente com Psyllium, Espirulina e Quitosana. Compre direto de fábrica.">
+    <meta name="keywords" content="bio caps fusion, emagrecimento natural, psyllium, espirulina, quitosana, suplemento alimentar, perder peso, saúde intestinal">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.biocapsfusion.com.br" />
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bio Caps Fusion - Emagreça com Saúde">
+    <meta property="og:description" content="Descubra o poder do Psyllium, Espirulina e Quitosana. Resultados reais para o seu corpo. Fale com um consultor!">
+    <meta property="og:url" content="https://www.biocapsfusion.com.br">
+    <meta property="og:site_name" content="Bio Caps Fusion">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Bio Caps Fusion",
+      "image": "",
+      "description": "Suplemento alimentar natural composto por Psyllium, Espirulina e Quitosana para auxílio no emagrecimento e bem-estar.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Bio Caps"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://wa.me/5548991938686",
+        "priceCurrency": "BRL",
+        "price": "0.00", 
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+    </script>
+
     <style>
-        /* Reset básico */
+        /* CSS OTIMIZADO PARA VELOCIDADE (Core Web Vitals) */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         
         :root {
@@ -16,25 +53,25 @@
             --light-gray: #f4f4f4;
         }
 
-        body { line-height: 1.6; color: var(--text-dark); }
+        body { line-height: 1.6; color: var(--text-dark); background-color: #fff; }
 
-        /* Botões */
+        /* Botões de Alta Conversão */
         .btn-cta {
             background-color: var(--accent-green);
             color: white;
-            padding: 18px 40px; /* Aumentei um pouco para dar destaque sem imagens */
+            padding: 18px 40px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 700;
             border-radius: 50px;
             font-size: 1.2rem;
-            transition: transform 0.2s;
+            transition: all 0.3s ease;
             display: inline-block;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
             border: none;
             cursor: pointer;
             margin-top: 20px;
         }
-        .btn-cta:hover { transform: scale(1.05); background-color: #128c7e; }
+        .btn-cta:hover { transform: scale(1.05); background-color: #128c7e; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6); }
 
         /* Header */
         header {
@@ -43,170 +80,180 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        .logo { font-size: 1.4rem; font-weight: bold; color: var(--primary-purple); }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-purple); letter-spacing: -1px; }
 
-        /* Hero Section - Agora Centralizada e focada no Texto */
+        /* Hero Section Otimizada */
         .hero {
-            padding: 80px 5%;
-            background: linear-gradient(135deg, var(--light-gray) 0%, #fff 100%);
-            text-align: center; /* Centraliza tudo */
-            min-height: 60vh;
+            padding: 100px 5%;
+            background: linear-gradient(135deg, #f8f0ff 0%, #ffffff 100%);
+            text-align: center;
+            min-height: 65vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        .hero-text { 
-            max-width: 800px; /* Limita a largura para leitura confortável */
-            margin: 0 auto;
-        }
+        .hero-text { max-width: 850px; margin: 0 auto; }
         .hero-text h1 { 
-            font-size: 3rem; 
-            line-height: 1.2;
+            font-size: 3.5rem; 
+            line-height: 1.1;
             color: var(--primary-purple); 
-            margin-bottom: 25px; 
+            margin-bottom: 20px; 
+            font-weight: 800;
         }
         .hero-text p { 
-            font-size: 1.3rem; 
-            margin-bottom: 30px; 
+            font-size: 1.25rem; 
+            margin-bottom: 35px; 
             color: #555;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         /* Benefícios */
-        .benefits { padding: 60px 5%; text-align: center; background-color: white; }
-        .benefits h2 { margin-bottom: 40px; color: var(--dark-purple); font-size: 2rem; }
+        .benefits { padding: 80px 5%; text-align: center; background-color: white; }
+        .benefits h2 { margin-bottom: 50px; color: var(--dark-purple); font-size: 2.2rem; font-weight: 700; }
         .cards-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
         .card {
-            background: var(--light-gray);
-            padding: 30px;
-            border-radius: 15px;
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 20px;
             width: 320px;
+            border: 1px solid #eee;
             border-top: 6px solid var(--primary-purple);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             transition: transform 0.3s;
         }
-        .card:hover { transform: translateY(-5px); }
+        .card:hover { transform: translateY(-10px); }
         .card h3 { margin-bottom: 15px; font-size: 1.4rem; color: var(--primary-purple); }
 
         /* Ingredientes */
-        .ingredients { padding: 60px 5%; background-color: var(--primary-purple); color: white; text-align: center; }
-        .ingredients h2 { margin-bottom: 10px; font-size: 2rem; }
-        .ing-list { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 35px; }
+        .ingredients { padding: 80px 5%; background: linear-gradient(to right, var(--dark-purple), var(--primary-purple)); color: white; text-align: center; }
+        .ingredients h2 { margin-bottom: 15px; font-size: 2.2rem; }
+        .ingredients p { font-size: 1.1rem; opacity: 0.9; }
+        .ing-list { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 40px; }
         .ing-item { 
             font-size: 1.3rem; 
             font-weight: bold; 
-            background: rgba(255,255,255,0.1);
-            border: 2px solid white; 
-            padding: 12px 30px; 
-            border-radius: 50px; 
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3); 
+            padding: 15px 35px; 
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
         }
 
         /* Modo de Uso */
-        .usage { padding: 60px 5%; background-color: white; }
+        .usage { padding: 80px 5%; background-color: white; }
         .usage h2 { text-align: center; color: var(--dark-purple); margin-bottom: 40px; font-size: 2rem; }
         .usage-container { display: flex; justify-content: center; }
         .usage-box { 
-            padding: 40px; 
+            padding: 50px; 
             border: 2px solid #f0f0f0; 
-            border-radius: 20px; 
-            max-width: 600px; 
+            border-radius: 25px; 
+            max-width: 700px; 
             text-align: center;
             background-color: #fafafa;
         }
-        .usage-box h3 { color: var(--primary-purple); margin-bottom: 15px; font-size: 1.6rem;}
-        .usage-box p { font-size: 1.1rem; }
+        .usage-box h3 { color: var(--primary-purple); margin-bottom: 15px; font-size: 1.8rem;}
+        .usage-box p { font-size: 1.2rem; color: #444; }
 
         /* Disclaimer & Footer */
-        .disclaimer { padding: 40px 5%; background-color: #f9f9f9; font-size: 0.9rem; color: #666; text-align: center; border-top: 1px solid #eee; }
-        .final-cta { padding: 80px 5%; text-align: center; background-color: white; }
-        .final-cta h2 { margin-bottom: 20px; color: var(--primary-purple); font-size: 2.2rem; }
-        .final-cta p { font-size: 1.2rem; margin-bottom: 30px; }
+        .disclaimer { padding: 40px 5%; background-color: #f9f9f9; font-size: 0.9rem; color: #777; text-align: center; border-top: 1px solid #eee; line-height: 1.8; }
+        .final-cta { padding: 100px 5%; text-align: center; background-color: white; }
+        .final-cta h2 { margin-bottom: 20px; color: var(--primary-purple); font-size: 2.5rem; font-weight: 800; }
+        .final-cta p { font-size: 1.3rem; margin-bottom: 35px; color: #555; }
 
-        /* Responsividade */
+        /* Responsividade Mobile First */
         @media (max-width: 768px) {
-            header { flex-direction: column; gap: 15px; text-align: center; }
+            header { flex-direction: column; gap: 15px; text-align: center; padding: 15px; }
+            .hero { padding: 60px 5%; }
             .hero-text h1 { font-size: 2.2rem; }
             .hero-text p { font-size: 1.1rem; }
-            .btn-cta { width: 100%; display: block; text-align: center; padding: 15px; }
+            .btn-cta { width: 100%; display: block; text-align: center; padding: 16px; font-size: 1.1rem; }
             .card { width: 100%; }
+            .usage-box { padding: 30px 20px; }
         }
     </style>
-    <!-- Event snippet for Contato conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-17857239217/vhB8CPjPhOMbELGx_8JC'});
-</script>
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17857239217">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17857239217');
+</script>
 </head>
 <body>
 
     <header>
         <div class="logo">BIO CAPS FUSION</div>
-        <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+o+Bio+Caps+Fusion" class="btn-cta">Falar com Vendedor</a>
+        <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+vi+no+Google+e+quero+saber+mais+sobre+o+Bio+Caps" class="btn-cta" title="Falar com especialista no WhatsApp">Falar com Especialista</a>
     </header>
 
     <section class="hero">
         <div class="hero-text">
-            <h1>Descubra o Equilíbrio e Bem-Estar que o Seu Corpo Precisa</h1>
-            <p>Bio Caps Fusion é a combinação inteligente de <strong>Psyllium, Espirulina e Quitosana</strong>. Uma fórmula natural desenvolvida para quem busca leveza e resultados reais na rotina diária.</p>
-            <p><strong>Exclusivo em cápsulas de alta absorção.</strong></p>
-            <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+quero+garantir+meu+Bio+Caps+Fusion" class="btn-cta">Quero Garantir o Meu</a>
+            <h1>Suplemento Natural para Bem-Estar e Controle de Peso</h1>
+            <p>Bio Caps Fusion combina a potência do <strong>Psyllium, Espirulina e Quitosana</strong>. A fórmula avançada para quem busca resultados reais, metabolismo ativo e queima natural, sem abrir mão da saúde.</p>
+            <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+quero+garantir+meu+desconto+no+Bio+Caps" class="btn-cta">Quero Garantir Meu Pote</a>
         </div>
     </section>
 
     <section class="benefits">
-        <h2>Por que Bio Caps Fusion funciona?</h2>
+        <h2>Por que o Bio Caps Fusion Funciona de Verdade?</h2>
         <div class="cards-container">
             <div class="card">
-                <h3>100% Fórmula Natural</h3>
-                <p>Ingredientes selecionados para entregar eficiência máxima sem agredir o seu organismo. Segurança total para o seu dia a dia.</p>
+                <h3>Ação Detox Natural</h3>
+                <p>Graças à <strong>Espirulina</strong> e ao <strong>Psyllium</strong>, sua fórmula auxilia na limpeza do organismo, reduzindo inchaço e promovendo leveza.</p>
             </div>
             <div class="card">
-                <h3>Praticidade Total</h3>
-                <p>Esqueça preparos complicados. Com cápsulas fáceis de ingerir, você mantém sua rotina saudável em qualquer lugar.</p>
+                <h3>Bloqueador de Gordura</h3>
+                <p>A <strong>Quitosana</strong> atua como uma fibra magnética, ajudando a reduzir a absorção de gorduras ingeridas na alimentação diária.</p>
             </div>
             <div class="card">
-                <h3>Equilíbrio Real</h3>
-                <p>Desenvolvido para ser o suporte ideal na manutenção do bem-estar, ajudando você a alcançar suas metas pessoais.</p>
+                <h3>Controle do Apetite</h3>
+                <p>Fibras inteligentes que promovem saciedade prolongada, facilitando a reeducação alimentar e o déficit calórico sem sofrimento.</p>
             </div>
         </div>
     </section>
 
     <section class="ingredients">
-        <h2>O Poder da Tripla Fusão</h2>
-        <p style="color: #eee; font-size: 1.1rem;">Não é mágica, é ciência nutricional. Conheça os pilares da nossa fórmula:</p>
+        <h2>Fórmula Premium de Alta Absorção</h2>
+        <p>Ingredientes 100% naturais selecionados rigorosamente:</p>
         <div class="ing-list">
-            <div class="ing-item">Psyllium</div>
-            <div class="ing-item">Espirulina</div>
-            <div class="ing-item">Quitosana</div>
+            <div class="ing-item">Psyllium Puro</div>
+            <div class="ing-item">Espirulina Premium</div>
+            <div class="ing-item">Quitosana Ativa</div>
         </div>
     </section>
 
     <section class="usage">
-        <h2>Simples de usar, fácil de amar</h2>
+        <h2>Como Tomar para Maximizar Resultados</h2>
         <div class="usage-container">
             <div class="usage-box">
-                <h3>💊 Apenas 2 Cápsulas ao Dia</h3>
-                <p>Para obter os melhores resultados, consuma preferencialmente antes das principais refeições com um copo de água, ou siga a orientação do seu profissional de saúde.</p>
+                <h3>💊 Tratamento Prático em Cápsulas</h3>
+                <p>Apenas <strong>2 cápsulas ao dia</strong>. Recomenda-se ingerir com bastante água, preferencialmente 30 minutos antes das principais refeições (almoço e jantar) para ativar as fibras.</p>
             </div>
         </div>
     </section>
 
     <section class="disclaimer">
-        <h3>Transparência e Segurança</h3>
-        <p>Este produto é um suplemento alimentar e deve ser utilizado como aliado de uma alimentação equilibrada e hábitos saudáveis. <strong>Não é um medicamento.</strong> Consulte um profissional de saúde antes de iniciar o uso, especialmente em casos de condições pré-existentes, gravidez ou amamentação.</p>
+        <h3>Segurança e Transparência</h3>
+        <p>O <strong>Bio Caps Fusion</strong> é um suplemento alimentar natural isento de registro conforme RDC 240/2018. Este produto não é um medicamento. Não exceder a recomendação diária de consumo indicada na embalagem. Mantenha fora do alcance de crianças. Gestantes, nutrizes e crianças somente devem consumir este produto sob orientação de nutricionista ou médico.</p>
     </section>
 
     <section class="final-cta">
-        <h2>Pronto para transformar sua rotina?</h2>
-        <p>Você está a um clique de começar uma nova fase. Fale agora com um de nossos consultores.</p>
-        <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+tenho+interesse+no+Bio+Caps+e+gostaria+de+falar+com+vendedor" class="btn-cta">Falar com Vendedor no WhatsApp</a>
+        <h2>Comece Sua Transformação Hoje</h2>
+        <p>Aproveite nossa condição exclusiva de lançamento direto pelo WhatsApp.</p>
+        <a href="https://wa.me/5548991938686?text=Ol%C3%A1%2C+quero+comprar+o+Bio+Caps+com+condi%C3%A7%C3%A3o+especial" class="btn-cta">Solicitar Atendimento Agora</a>
     </section>
 
 </body>
-
 </html>
